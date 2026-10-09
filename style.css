@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #202026;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #E8A0BF;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #c5b9c0;
+    margin-bottom: 30px;
+}
+
+#studentForm {
+    background: #2b272d;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #59404d;
+}
+
+#studentForm input,
+#studentForm select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    background: #202026;
+    color: white;
+    border: 1px solid #59404d;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+#studentForm input:focus,
+#studentForm select:focus {
+    border-color: #E8A0BF;
+}
+
+#studentForm select option {
+    background: #2b272d;
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 13px;
+    background: #C76B91;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background: #ad5278;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #E8A0BF;
+}
+
+.student-card {
+    background: #2b272d;
+    border: 1px solid #59404d;
+    border-left: 4px solid #E8A0BF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.student-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+    color: #F2D5E1;
+}
+
+.student-card p {
+    color: #d2c7cd;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.student-actions {
+    margin-top: 15px;
+}
+
+.student-actions button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background: #E8A0BF;
+    color: #202026;
+}
+
+.delete-btn {
+    background: #D95375;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    color: #c5b9c0;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    #studentForm {
+        padding: 18px;
+    }
+
+    .student-card {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Registration</h1>
+        <p class="subtitle">Register and manage your students</p>
+
+        <form id="studentForm">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter student name"
+                required
+            >
+
+            <input
+                type="email"
+                id="studentEmail"
+                placeholder="Enter student email"
+                required
+            >
+
+            <select id="studentCourse" required>
+                <option value="">Select a course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Python">Python</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Add Student</button>
+
+        </form>
+
+        <h2>Registered Students</h2>
+
+        <div id="studentList"></div>
+
+    </div>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
